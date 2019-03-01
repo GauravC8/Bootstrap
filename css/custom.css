@@ -1,0 +1,11 @@
+.navbar{
+    background: #F97300;
+}
+body{
+  background-image: url("/images/back1.png") !important;
+  background: no-repeat;
+  background-size: cover;
+}
+a:hover{
+    color:blue;
+}
