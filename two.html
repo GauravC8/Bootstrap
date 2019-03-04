@@ -4,54 +4,62 @@
     <title>Assignment</title>
     <style>
         body {
-            background: linear-gradient(green, yellow);
+            background: linear-gradient(green, white);
+            max-width: 1080px;
         }
 
         #header {
             background-image: url("/images/back1.png");
-            color: ;
             text-align: center;
-            padding: 5px;
-            border-spacing: 10px;
-            
+            padding: 10px;
+        }
+
+        .article {
+            display: table-cell;
+            width: auto;
+            background-size: 1080px;
+            border: 15px solid white;
         }
 
         .row {
-            display: table;
-
-            background: linear-gradient(green, yellow);
-            border-spacing: 10px;
-            border-spacing: 10px;
-            border-color: aliceblue;
-
-
+            display: table-row;
+            background: linear-gradient(green, white);
+            width: auto;
+            height: auto;
         }
 
         .col {
             display: table-cell;
-
+            width: auto;
+            height: auto;
+            border: 10px solid white;
+            border-left: 0px;
+            border-right: 0px;
         }
 
-       button {
-           width:120px;
-           margin-bottom: 10px;
-            display: inline-block;
-            padding-bottom: 20px;
+        button {
+            width: 120px;
+            margin-bottom: 15px;
+            padding: 10px;
             font-size: 15px;
             cursor: pointer;
             text-align: center;
             color: #fff;
             background-color: blueviolet;
-            border: 1px;
-
             border-radius: 15px;
+        }
+
+        .button {
+            top: 20px;
+            padding: 20px;
         }
 
         img {
             height: 480px;
             width: 470px;
-            border:2px;
+            border: 2px;
             border-color: aliceblue;
+            border-spacing: 3px;
         }
 
         #footer {
@@ -66,44 +74,43 @@
     </style>
 </head>
 
-
 <body>
-    <div id="header">
-        <h1>Devon's Rural Retreats</h1>
-    </div>
-    <br>
-    <div class="heading">
-        <h1>Award winning Accomodation , self catering or bed and breakfast</h1>
-    </div>
-    <div class="row">
-
-        <div class="col">
-            <h1>New Horizon sunset view</h1>
-            <figure>
-                <img src="/images/sunset.jpg">
-                <figcaption>cation for this image</figcaption>
-            </figure>
+    <div class="article">
+        <div id="header">
+            <h1>Devon's Rural Retreats</h1>
         </div>
-        <div class="col">
-            <h1>Image view</h1>
-            <figure>
-                <img src="/images/sunset.jpg">
-                <figcaption>caption</figcaption>
-            </figure>
+        <br>
+        <div class="heading">
+            <h1>Award winning Accomodation , self catering or bed and breakfast</h1>
         </div>
-        <div class="col">
-            <br>
-            <button>Accomodation</button><br>
-            <button>Map</button><br>
-            <button>Information</button><br>
-            <button>Booking</button><br>
-            <button>Attraction</button><br>
-            <button>Home Page</button><br>
+        <div class="row">
+            <div class="col">
+                <h1>New Horizon sunset view</h1>
+                <figure>
+                    <img src="/images/sunset.jpg">
+                    <figcaption>cation for this image</figcaption>
+                </figure>
+            </div>
+            <div class="col">
+                <h1>Image view</h1>
+                <figure>
+                    <img src="/images/sunset.jpg">
+                    <figcaption>caption</figcaption>
+                </figure>
+            </div>
+            <div class="col button">
+                <br>
+                <button>Accomodation</button><br>
+                <button>Map</button><br>
+                <button>Information</button><br>
+                <button>Booking</button><br>
+                <button>Attraction</button><br>
+                <button>Home Page</button><br>
+            </div>
         </div>
+        <br>
+        <div id="footer">Footer goes over here</div>
     </div>
-    <br>
-    <div id="footer">Footer goes over here</div>
-
 </body>
 
 </html>
