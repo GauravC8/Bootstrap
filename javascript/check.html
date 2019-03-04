@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+</head>
+
+<body>
+    <script lang="Javascript">
+        document.write("<h2>Voting Eligiblity<h2><br/>");
+        var name, age;
+        name = (prompt("Enter Name :", "username"));
+        age = parseInt(prompt("Enter Age :", "18"));
+        document.write("Are you eligible for vote :");
+        document.write("<br />");
+        if (age >= 10) {
+            document.write("Yes ", name, " is eligible for vote", " having age ", age);
+        }
+        else {
+            document.write("No");
+        }
+        var i=1;
+        document.write("<br>");
+        while(i<10) {
+            document.write(name, "<br>");
+        }
+    </script>
+</body>
+</html>
