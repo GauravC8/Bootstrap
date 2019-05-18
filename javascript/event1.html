@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+  <script>
+  function myfun() {
+    alert("You pressed");
+  }
+  function myfun1(x) {
+    x.style.background = "yellow"
+  }
+  function myfun2() {
+    var x = document.getElementById("name");
+    x.value = x.value.toUpperCase();
+  }
+  function myfun3() {
+    alert("You pressed");
+  }
+  </script>
+</head>
+
+<body onload="myfun3()">
+    <p>A fuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu***ng html</p>
+    <p>Enter Your Name: <input type="text" id="name" onblur="myfun2()"></p>
+    <input type="text" onkeypress="myfun()" onfocus="myfun1(this)"></input>
+
+</body>
+</html>

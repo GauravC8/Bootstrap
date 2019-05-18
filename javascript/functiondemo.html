@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+
+  <script lang="Javascript">
+      function sum(num1,num2)
+      {
+          var ans = num1+num2;
+          document.write("The sum is : ",ans);
+      }
+      function test(s)
+      {
+          alert("Function called");
+          document.write(s);
+      }
+      function add()
+      {
+          var ans = 0;
+          var len = add.arguments.length;
+          for(i=0; i<len;i++)
+          {
+              ans+=add.arguments[i];
+          }
+          document.write("The sum is "+ans);
+      }
+      
+</script>
+
+</head>
+
+<body>
+    <h1>function to add two number</h1>
+  <script lang="Javascript">
+      var n1, n2;
+        n1 = parseInt(prompt("Enter first number :", "null"));
+        n2 = parseInt(prompt("Enter second number :", "null"));
+      sum(n1,n2);
+      add(10,20,30);
+      add(10,20);
+      
+  </script>
+  <form action="" method="post">
+      <input type="button" value = "Click me" onMouseOver="test('hello')"/>
+  </form>
+</body>
+</html>
